@@ -39,10 +39,10 @@ cron occurrence config 1 run-days mon-sun
 
 If you want to archive backups to a remote server, you can use TFTP or another file transfer protocol. Modify the Kron policy list to transfer the backup file to the remote server.
 
-
+```
 copy running-config startup-config
 copy flash:config-backup/config-backup-$(date +"%Y-%m-%d").cfg tftp://remote_server_ip/config_backup/
-
+```
 
 4. **Verify Backup Operation:**
 
